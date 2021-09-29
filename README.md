@@ -1,6 +1,6 @@
 # Binary Full-Adder (Homework 4)
 
-In this homework you will create an simple computing machine capable of summing up two numbers together.
+In this homework you will create an simple computing machine capable of summing up two numbers together. You will also have to create the circuit simulation of the full adder.
 
 Click on the image below to see a [demo video]() of how the timer works:
 
@@ -9,6 +9,8 @@ Click on the image below to see a [demo video]() of how the timer works:
 <img src="data/video_thumbnail.png" width="80%" />
 </p>
 </a>
+
+<iframe src="https://tinyurl.com/yj7ultw8"></iframe>
 
 The **objectives** of this homework are to learn:
 
@@ -24,10 +26,23 @@ The **objectives** of this homework are to learn:
 
 ## How does the adder work?
 
+<p align="center">
+<img src="data/diagram.png" width="80%" />
+</p>
+
+<p align="center">
+<img src="data/nand.png" width="80%" />
+</p>
+
 ## Bill of Material (BOM)
 
-| Designator | Name | Quantity |
-| ---------- | ---- | -------- |
+| Description   | Name/Value | Quantity |
+| ------------- | ---------- | -------- |
+| MOSFETs       | 2N7000     | 18       |
+| Resistors     | 1K         | 9        |
+| Jumper cables |            | Many     |
+
+- You can buy the MOSFTET from [here](https://www.devicemart.co.kr/goods/view?no=12089). Note that they sell packs of 10.
 
 ## Details about the Firmware Firmware
 
@@ -46,7 +61,7 @@ Take clear photos of your breadboard, the [_SubmissionForm.md_](./SubmissionForm
 **DO NOT SUBMIT THE VIDEO USING THE HOMEWORK SYSTEM**. Instead, upload the video online (YouTube, Google Drive...) and place a public link to the video inside the [_SubmissionForm.md_](./SubmissionForm.md) file. The video should show a working demo of your prototype. Feel free to use a voice-over explaining how the system is working.
 
 <p align="center">
-<img src="data/hwsystem___.png" width="500" />
+<img src="data/hwsystem.png" width="500" />
 </p>
 
 Please note that:
