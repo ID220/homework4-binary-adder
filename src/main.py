@@ -20,6 +20,17 @@ def generateRandomNumber():
     return random.randint(0, 32)
 
 
+# bitSum takes two bits (b1 and b2) and add them
+# the function returns a tuple with the result (0 or 1)
+# and the carryover (0 or 1)
+def bitSum(b1, b2, carry):
+    result = 0
+    carry = 0
+    # PLACEHOLDER: put here your code
+    # to compute result and carryover
+    return (result, carry)
+
+
 # sumRow takes two numbers (n1 and n2) which are 5 bits longs
 # and sum them together. The results is a 5-bits long number
 # the carryover (0 or 1) shows whether the addition overflowed
@@ -27,17 +38,6 @@ def sumRow(n1, n2):
     result = 0b10101  # a placeholder value in binary
     carry = 1  # a placeholder value in binary
 
-    # PLACEHOLDER: put here your code
-    # to compute result and carryover
-    return (result, carry)
-
-
-# bitSum takes two bits (b1 and b2) and add them
-# the function returns a tuple with the result (0 or 1)
-# and the carryover (0 or 1)
-def bitSum(b1, b2, carry):
-    result = 0
-    carry = 0
     # PLACEHOLDER: put here your code
     # to compute result and carryover
     return (result, carry)

@@ -4,7 +4,7 @@ In this homework you will create an simple computing machine capable of summing 
 
 Click on the image below to see a [demo video]() of how the timer works:
 
-<a href="">
+<a href="https://youtu.be/cbyGPSSKz-8">
 <p align="center">
 <img src="data/video_thumbnail.png" width="80%" />
 </p>
@@ -63,6 +63,25 @@ In practice, you can use the digital output pins 0, 1 and 2 to represent three b
 ## Firmware
 
 The firmware should be written in MicroPython and should run on the micro:bit.
+
+The micro:bit performs the addition on two randomly generated 5-bits numbers (can store values from decimal 0 to 31). The two random numbers are displayed in the first two rows (little endian format). So, for example the decimable numbers 5 and 6 are represented as `00101` and `00110` respectively. Their sum is 11, in binary `01011`. This addition is not performed by the micro:bit, but instead using the adder circuit above.
+
+
+<p align="center">
+<img src="data/additions.png" width="80%" />
+</p>
+
+For each of the bits of the two input numbers, an addition is performed by setting the digital output level of P0 and P1 to the `HIGH` or `LOW` states. If any bitwise sum has a carryover, the pin P2 is set `HIGH` for the next addition. The final result is displayed at row 3, and eventual **overflows** (e.g., CARRY out of the addition for the last bit) is shown as a single bit on on row 4. See the examples above or the video for more details.
+
+To complete the assignment you will have to implement two functions (in the [main.py](src/main.py) included)
+
+```python
+def bitSum(b1, b2, carry):
+  ...
+  
+def sumRow(n1, n2):
+  ...
+```
 
 ## Submission and grading
 
