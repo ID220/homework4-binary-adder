@@ -48,7 +48,7 @@ In the assignment you will have to construct the adder above using only the MOSF
 </p>
 </a>
 
-In practice, you can use the digital output pins 0, 1 and 2 to represent three bits that should be added (A and B and the carry-in C). The result of this sum can be read with the digital input pins 8 (SUM) and 16 (CARRY out). The micro:bit will therefore take two 5-bits numbers and sum them together, bit by bit. See the session about the [Firmware](##Firmware) below for details about the software.
+In practice, you can use the digital output pins 0, 1 and 2 to represent three bits that should be added (A and B and the carry-in C). The result of this sum can be read with the digital input pins 8 (SUM) and 16 (CARRY out). The micro:bit will therefore take two 5-bits numbers and sum them together, bit by bit. See the session about the [Firmware](#firmware) below for details about the software.
 
 ### Bill of Material (BOM)
 
