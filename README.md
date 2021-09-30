@@ -1,6 +1,6 @@
 # Binary Full-Adder (Homework 4)
 
-In this homework you will create an simple computing machine capable of summing up two numbers together. You will also have to create the circuit simulation of the full adder.
+In this homework you will create an simple computing machine capable of summing up two numbers together.
 
 Click on the image below to see a [demo video]() of how the timer works:
 
@@ -9,8 +9,6 @@ Click on the image below to see a [demo video]() of how the timer works:
 <img src="data/video_thumbnail.png" width="80%" />
 </p>
 </a>
-
-<iframe src="https://tinyurl.com/yj7ultw8"></iframe>
 
 The **objectives** of this homework are to learn:
 
@@ -26,15 +24,33 @@ The **objectives** of this homework are to learn:
 
 ## How does the adder work?
 
+The diagram below shows the diagram of a [full adder](<https://en.wikipedia.org/wiki/Adder_(electronics)>) - a circuit that performs addition on two single binary digits A and B as well as a valued carrier in (C), and returns the SUM and the CARRY out. Click on the image below to see the [adder simulation](https://tinyurl.com/yj7ultw8).
+
+<a href="https://tinyurl.com/yj7ultw8">
 <p align="center">
 <img src="data/diagram.png" width="80%" />
 </p>
+</a>
+
+The adder above is constructed only using [NAND gates](https://en.wikipedia.org/wiki/NAND_gate): the NAND gate (NOT-AND) is a logic gate which produces an output which is false only if all its inputs are true (the complement of an AND gate).
+
+The image below shows how the NAND gate works and how you can construct one using two transistors (MOSFET) placed in series.
 
 <p align="center">
 <img src="data/nand.png" width="80%" />
 </p>
 
-## Bill of Material (BOM)
+In the assignment you will have to construct the adder above using only the MOSFET (2N7000). Here the [schematics](data/schematics.pdf) of the full circuit you will have to implement.
+
+<a href="data/schematics.pdf">
+<p align="center">
+<img src="data/schematics.png" width="80%" />
+</p>
+</a>
+
+In practice, you can use the digital output pins 0, 1 and 2 to represent three bits that should be added (A and B and the carry-in C). The result of this sum can be read with the digital input pins 8 (SUM) and 16 (CARRY out). The micro:bit will therefore take two 5-bits numbers and sum them together, bit by bit. See the session about the [Firmware](##Firmware) below for details about the software.
+
+### Bill of Material (BOM)
 
 | Description   | Name/Value | Quantity |
 | ------------- | ---------- | -------- |
@@ -44,7 +60,7 @@ The **objectives** of this homework are to learn:
 
 - You can buy the MOSFTET from [here](https://www.devicemart.co.kr/goods/view?no=12089). Note that they sell packs of 10.
 
-## Details about the Firmware Firmware
+## Firmware
 
 The firmware should be written in MicroPython and should run on the micro:bit.
 
