@@ -17,7 +17,7 @@ def displayRow(row, number):
 
 
 def generateRandomNumber():
-    return random.randint(0, 32)
+    return random.randint(0, 31)
 
 
 # bitSum takes two bits (b1 and b2) and add them
