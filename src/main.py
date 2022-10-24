@@ -37,7 +37,7 @@ def bitSum(b1, b2, carry):
 
 
 # sumRow takes two numbers (n1 and n2) which are 5 bits longs
-# and sum them together. The results is a 5-bits long number
+# and sum them together. The results is a 8-bits long number
 # the carryover (0 or 1) shows whether the addition overflowed
 # sumRow calls bitSum because the addition is performed in hardware
 def sumRow(n1, n2):
